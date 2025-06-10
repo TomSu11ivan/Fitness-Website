@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <h1>Meet The Swole Patrol</h1>
+    
+    <table>
+        {% for pt in pts %}
+            <tr>
+                <th>Price</th>
+                <th>{{ pt["name"] }}</th>
+            </tr>
+            <tr>
+                <td>{{ pt["price"] }}</td>
+                <td><a href="{{ url_for('pt', pt_id=pt['pt_id'] ) }}">See Details</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}
+
+<!--<td><a href="{{ url_for('add_pt_to_cart', pt_id=p['pt_id'] ) }}">Add to Cart</a></td>-->
