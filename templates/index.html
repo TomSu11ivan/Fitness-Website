@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <h1>The Brawn Barn</h1>
+    <p>
+        <div class="container1">
+            <a href="{{ url_for('membership') }}"><img src="../static/GymFloor.jpg" alt="Join Today"></a>
+            <div class="centered1"><a href="{{ url_for('membership') }}">Join Us Today!</a></div>
+        </div>
+
+        <div class="container2">
+            <a href="{{ url_for('pts') }}"><img src="../static/pts.jpg" alt="Our Personal Trainers"></a></a>
+            <div class="centered2"><a href="{{ url_for('pts') }}">Meet our Team</a></div>
+        </div>
+
+        <div class="container3">
+            <a href="{{ url_for('classes') }}"><img src="../static/GymClasses.jpg" alt="Our Classes"></a></a>
+            <div class="centered3"><a href="{{ url_for('classes') }}">Our Exercise Classes</a></div>
+        </div>
+    </p>    
+ 
+{% endblock %}

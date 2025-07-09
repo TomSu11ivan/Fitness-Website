@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block main_content %}
+
+    <h1>Admin Account</h1>
+        <p>Username: {{ g.admin }}</p>
+        <p><a href=" {{ url_for('logout') }}">Logout</a></p>
+
+{% endblock %}
